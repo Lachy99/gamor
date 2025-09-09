@@ -1,0 +1,17 @@
+:root {
+  --background-primary: #ffffff;
+  --background-secondary: #f4f4f4;
+  --text-primary: #1a1a1a;
+  --text-secondary: #555555;
+  --accent-color: #7f00ff;
+  --boreder-color: #e0e0e0;
+}
+
+[data-theme="dark"] {
+  --background-primary: #121212;
+  --background-secondary: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent-color: #ff8a00;
+  --boreder-color: #333333;
+}

@@ -1,0 +1,96 @@
+.searchPanel {
+  background-color: var(--background-primary);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.searchPanel h4 {
+  color: var(--text-secondary);
+}
+
+.playerList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.playerItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-secondary);
+  padding: 15px;
+  border-radius: 10px;
+}
+.playerItem button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.searchNowBtn {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.searchButton {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primarry);
+  font-size: 16px;
+}
+
+.gameSelect {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.platforms {
+  display: flex;
+  gap: 10px;
+}
+
+.platformBtn {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.platformBtn.active {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.playerList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 10px;
+}

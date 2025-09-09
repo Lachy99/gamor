@@ -1,0 +1,122 @@
+.mainboardCard {
+  background-color: var(--background-secondary);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid var(--border-color);
+}
+
+.mainboardGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.introPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.introPanel h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.introPanel p {
+  color: var(--text-secondary);
+}
+
+.actionButtons button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.createAccountBtn {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+}
+.signInBtn {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  font-weight: bold;
+}
+
+.characterPanel {
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.characterImage {
+  width: 100%;
+  max-width: 250px;
+  margin-top: 20px;
+}
+
+.timer {
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 900px) {
+  .mainboardCard {
+    padding: 20px;
+  }
+
+  .mainboardGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .introPanel {
+    text-align: center;
+    align-items: center;
+  }
+
+  .characterPanel .characterImage {
+    max-width: 250px;
+    padding: 20px;
+  }
+  .timer {
+    font-size: 14px;
+    padding: 8px 12px;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .introPanel h1 {
+    font-size: 48px;
+  }
+
+  .actionButtons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .timer {
+    font-size: 12px;
+    padding: 6px 10px;
+    top: 15px;
+    right: 15px;
+  }
+}
